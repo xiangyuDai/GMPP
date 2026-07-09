@@ -6,8 +6,15 @@ Genomic Mating to predict expected progeny genetic values.
 
 ``` r
 install.packages("devtools")
+
+# Install from GitHub
 devtools::install_github("xiangyuDai/GMPP")
+
+# Or install from Git
+devtools::install_git("https://github.com/xiangyuDai/GMPP")
 ```
+
+If the above methods fail, you can manually download the latest source package from the [Releases page](https://github.com/xiangyuDai/GMPP/releases) and install it locally.
 
 ## Quick Start
 
