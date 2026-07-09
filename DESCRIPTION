@@ -1,0 +1,23 @@
+Package: GMPP
+Type: Package
+Title: Genomic mating to predict expected progeny genetic values
+Version: 1.0.0
+Date: 2026-07-07
+Authors@R: c( person("Mengjin", "Zhu", email = "zhumengjin@mail.hzau.edu.cn", role = c("cre", "aut", "cph")),
+              person("Xiangyu", "Dai", role = "aut"))
+Description: Computes expected progeny genetic values for candidate
+    parental mating combinations in plant and animal breeding programs.
+    The package implements a three-stage genomic mating pipeline: genomic
+    relationship matrices are constructed using the VanRaden method, marker
+    effects are estimated via genomic best linear unbiased prediction (GBLUP)
+    using the 'gaston' package, and expected progeny genetic values are predicted
+    by deriving progeny genotype probabilities from parental genotypes and integrating
+    marker effects across genome-wide markers. Both additive and dominance effects
+    can be modelled, and the framework supports purebred, crossbred, and multi-breed
+    mating designs with optional reference populations for marker effect estimation.
+License: GPL (>= 3)
+Imports: gaston
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 8.0.0
+Depends: R (>= 3.5)
